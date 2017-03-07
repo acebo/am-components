@@ -1,0 +1,42 @@
+.wrapper {
+	padding: 1rem 10rem;
+	background-color: #fff;
+	box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.li-item {
+	display: table-cell !important;
+	width: 1%;
+	border-radius: 0px;
+  
+	a {
+		padding: 0.3rem 1rem !important;
+		border: 1px solid #0096a9 !important;
+    color: #0096a9;
+	}
+
+	&:first-child {
+		a {
+			border-radius: 5px 0 0 5px;
+		}
+	}
+
+	&:last-child {
+		a {
+			border-radius: 0 5px 5px 0;
+		}
+	}
+}
+
+.li-item-active {
+	@extend .li-item;
+
+	a {
+		background-color: #0096a9 !important;
+		color: #FFF;
+	}
+}
+
+.tab-content-label {
+	padding: 2rem 0 0 2rem;
+}

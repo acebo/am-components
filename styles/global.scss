@@ -1,0 +1,32 @@
+@import "variables";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+
+  -webkit-tap-highlight-color: transparent;
+
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@font-face {
+	font-family: 'Prompt';
+	src: url('/fonts/Prompt-Regular.ttf') format('truetype');
+}
+
+body {
+  background-color: $porcelain;
+  font-family: $font-prompt !important;
+}
+
+.title-app {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}

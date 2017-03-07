@@ -1,0 +1,84 @@
+@import '~styles/variables';
+
+.button {
+  border: none;
+  color: $black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin-right: 5px;
+  outline: none;
+  padding: 6px 12px;
+  text-align: center;
+  white-space: nowrap;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  svg {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+}
+
+.block {
+  width: 100%;
+}
+
+.text {
+  vertical-align: middle;
+}
+
+// Sizes
+.large {
+  // font-size: 18px;
+  line-height: 1.3333;
+  // padding: 10px 16px;
+  padding: 0.5rem 2rem;
+  font-size: 1.1rem;
+}
+
+.small {
+  // font-size: 12px;
+  line-height: 1.5;
+  // padding: 5px 10px;
+  padding: 0.4rem 1rem;
+  font-size: 0.85rem;
+}
+
+.xsmall {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 1px 5px;
+}
+
+// Themes
+.primary {
+  background-color: $bondi-blue;
+  color: $white;
+
+  &:hover {
+    background-color: $robins-egg-blue;
+  }
+}
+.error {
+  background-color: $monza;
+  color: $white;
+
+  &:hover {
+    background-color: $torch-red;
+  }
+}
+.primary-text {
+  background-color: $bondi-blue;
+  color: $white;
+  border-radius: 2px;
+  margin-left: 0.4rem;
+}
+.error-text {
+  @extend .primary-text;
+  background-color: $monza;
+}

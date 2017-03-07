@@ -1,0 +1,8 @@
+@import '~styles/variables';
+
+.label {
+  display: inline-block;
+  font-weight: 500;
+  font-family: $font-prompt;
+  color: $boulder;
+}
